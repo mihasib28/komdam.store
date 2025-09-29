@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#MenuItems {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+#MenuItems li {
+
+    list-style: none;
+    padding: 0% 10px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+#MenuItems li a {
+
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+#MenuItems li a:hover,
+#MenuItems li a.active {
+
+    color: #f0a758;
+}
+
+#MenuItems li a.active::after,
+#MenuItems li a:hover::after {
+
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: #f0a758;
+    bottom: -4px;
+    left: 35%; 
+    }
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 50px 80px;
+}
+
+#hero h4{
+
+    font-size: 30px;
+}
+
+#hero h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0;
+
+}
+
+#hero h1 {
+    color: #f0a758;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+#hero p{
+    font-size: 20px;
+    color: #555;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+button{
+
+    background-image: url('Image/button.png');
+    background-size: cover;
+    background-color: transparent;
+    color: #f0a758;
+    border: 0px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.higlight {
+    color: #f0a758;
+    font-weight: 700;}
+
+
+    .section-p1 {
+        padding: 40px 80px;
+    }
+
+    #feature{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        gap: 200px;
+        
+    }
+
+    #feature .fe-box {
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0,0,0,0.1);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 15px 0;
+    }
+
+    #feature .fe-box:hover {
+        box-shadow: 10px 10px 54px rgba(41, 38, 38, 0.1);
+
+    }
+
+     #feature .fe-box img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    
+    #feature .fe-box h6 {
+        padding: 9px 8px 6px 8px;
+        display: inline-block;
+        line-height: 1;
+        border-radius: 4px;
+        color: #f0a758;
+        
+        margin-top: 5px;
+    }  
+    
+    
+    #product1 {
+    text-align: center;
+}
+
+#product1 .pro1 {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+    margin: 15px;
+    transition: 0.3s ease;
+    box-sizing: border-box; /* ✅ prevent overflow */
+}
+
+#product1 .pro1:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transform: translateY(-5px); /* ✅ smooth hover */
+}
+
+#product1 .pro1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#product1 h2 {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #f0a758;
+}
+
+#product1 p {
+    font-size: 30px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* ✅ FIXED price section */
+#product1 .old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#product1 .new-price {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ✅ FLEXBOX FIX */
+#product1 .pro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* better spacing */
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+/* Tablet (max 992px) */
+@media (max-width: 992px) {
+    #header {
+        padding: 15px 40px;
+    }
+
+    #hero {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    #hero h1 {
+        font-size: 50px;
+    }
+
+    #product1 h2 {
+        font-size: 50px;
+    }
+
+    #product1 p {
+        font-size: 22px;
+    }
+
+    #feature {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+    #MenuItems {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #product1 .pro1 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #product1 h2 {
+        font-size: 36px;
+    }
+
+    #product1 p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 12px 50px 12px 40px;
+    }
+}
