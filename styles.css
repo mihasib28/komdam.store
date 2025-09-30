@@ -418,10 +418,21 @@ button{
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 799px) {
   #feature .fe-box {
     width: 90%;              /* one per row on very small screens */
   }
+
+  #product1 h2 {
+        font-size: 40px; /* smaller on tablet/mobile */
+    }
+
+    #product1 p {
+        font-size: 15px; /* smaller on tablet/mobile */
+    }
+}
+
+
 
   
     
