@@ -18,6 +18,14 @@
     left: 0;
 }
 
+.logo {
+    width: 100%;       /* container অনুযায়ী স্কেল হবে */
+    max-width: 300px;  /* সর্বাধিক 300px থাকবে */
+    height: auto;      /* aspect ratio ঠিক থাকবে */
+    display: block;
+}
+
+
 #MenuItems {
 
     display: flex;
