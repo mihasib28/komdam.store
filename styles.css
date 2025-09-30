@@ -22,7 +22,7 @@
 
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -61,7 +61,17 @@
     left: 35%; 
     }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 #hero{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +79,10 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     text-align: center;
     padding: 50px 80px;
+}
+
+.MixProduct {
+    height: 700px;
 }
 
 #hero h4{
@@ -120,46 +134,14 @@ button{
         padding: 40px 80px;
     }
 
-    #feature{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 20px;
-        gap: 200px;
-        
-    }
-
-    #feature .fe-box {
-        width: 180px;
-        text-align: center;
-        padding: 25px 15px;
-        box-shadow: 20px 20px 34px rgba(0,0,0,0.1);
-        border: 1px solid #cce7d0;
-        border-radius: 4px;
-        margin: 15px 0;
-    }
-
-    #feature .fe-box:hover {
-        box-shadow: 10px 10px 54px rgba(41, 38, 38, 0.1);
-
-    }
-
-     #feature .fe-box img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    
-    #feature .fe-box h6 {
-        padding: 9px 8px 6px 8px;
-        display: inline-block;
-        line-height: 1;
-        border-radius: 4px;
-        color: #f0a758;
-        
-        margin-top: 5px;
-    }  
+    #feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  gap: 200px;
+}
     
     
     #product1 {
@@ -167,8 +149,8 @@ button{
 }
 
 #product1 .pro1 {
-    width: 23%;
-    min-width: 250px;
+    width: 15%;
+    min-width: 150px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 10px;
@@ -226,67 +208,218 @@ button{
 }
 
 
+/* footer */
 
-
-
-
-
-
-
-
-/* Responsive Design */
-/* Tablet (max 992px) */
-@media (max-width: 992px) {
-    #header {
-        padding: 15px 40px;
-    }
-
-    #hero {
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px 20px;
-    }
-
-    #hero h1 {
-        font-size: 50px;
-    }
-
-    #product1 h2 {
-        font-size: 50px;
-    }
-
-    #product1 p {
-        font-size: 22px;
-    }
-
-    #feature {
-        flex-wrap: wrap;
-        gap: 40px;
-    }
+/* Footer Section */
+#footer {
+  background: #222;
+  color: #fff;
+  padding: 60px 20px 20px;
+  margin-top: 50px;
+  font-family: 'League Spartan', sans-serif;
 }
 
-/* Mobile (max 768px) */
-@media (max-width: 768px) {
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 220px;
+}
+
+.footer-box h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f0a758;
+}
+
+.footer-box p,
+.footer-box ul li a {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin: 8px 0;
+}
+
+.footer-box ul li a:hover {
+  color: #f0a758;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 20px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f0a758;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 799px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 799px) {
+
     #MenuItems {
+        display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        padding: 80px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+        
     }
 
-    #product1 .pro1 {
-        width: 100%;
-        max-width: 350px;
+    #MenuItems.active {
+        right: 0;
+        transition: 0.3s ease;
     }
 
-    #product1 h2 {
-        font-size: 36px;
+    #MenuItems li {
+       margin-bottom: 2px;
     }
 
-    #product1 p {
-        font-size: 18px;
+    #mobile {
+        display: flex;
+        align-items: center;
     }
 
-    button {
+    #mobile i {
+        color: #000;
         font-size: 20px;
-        padding: 12px 50px 12px 40px;
+        padding-left: 20px;
     }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        color: #000;
+        
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+
+
+    /* HERO SECTION RESPONSIVE */
+    #hero {
+    flex-direction: column;       /* stack text & image */
+    gap: 40px;                    /* reduce gap */
+    padding: 30px 20px;           /* smaller padding */
+    text-align: center;
+  }
+
+  #hero .hero-text {
+    order: 1;                     /* text first */
+  }
+
+  #hero img {
+    order: 2;                     /* image after text */
+    height: auto;                 /* scale naturally */
+    max-width: 100%;              /* fit screen */
+  }
+
+  #hero h1 {
+    font-size: 40px;              /* smaller heading */
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero h4 {
+    font-size: 20px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 12px 40px;           /* smaller button */
+    background-size: contain;     /* shrink button bg */
+  }
+
+
+   #feature {
+    flex-wrap: wrap;         /* allow items to wrap */
+    gap: 20px;               /* smaller gap */
+    padding: 20px;           /* add some breathing space */
+  }
+
+  #feature .fe-box {
+    width: 45%;              /* two per row */
+    margin: 10px auto;
+  }
 }
+
+@media (max-width: 500px) {
+  #feature .fe-box {
+    width: 90%;              /* one per row on very small screens */
+  }
+
+  
+    
+}
+
+
+
+
+
