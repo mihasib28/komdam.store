@@ -298,14 +298,7 @@ button{
   .social-icons {
     margin-top: 10px;
   }
-}
-
-
-
-
-
-
-
+ }
 
 
 
@@ -433,10 +426,24 @@ button{
 }
 
 
+@media (max-width: 477px) {
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo left, icons right */
+    padding: 10px 20px; 
+  }
+
+  #header .logo {
+    margin-right: auto;  /* stick logo to the left */
+    max-width: 120px;    /* optional: shrink logo for mobile */
+  }
 
   
-    
 }
+
+
+
 
 
 
