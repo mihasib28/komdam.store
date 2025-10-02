@@ -152,13 +152,17 @@ button{
 }
     
     
-    #product1 {
+    #product1 .pro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
+    gap: 30px; /* more spacing */
 }
 
 #product1 .pro1 {
-    width: 15%;
-    min-width: 150px;
+    flex: 1 1 250px;   /* allow flexible width, min 250px */
+    max-width: 300px; /* prevent getting too wide */
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 10px;
@@ -166,8 +170,15 @@ button{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
     margin: 15px;
     transition: 0.3s ease;
-    box-sizing: border-box; /* ✅ prevent overflow */
+    box-sizing: border-box;
 }
+
+#product1 h2,
+#product1 p {
+    text-align: center;   /* ✅ center heading + paragraph */
+    width: 100%;          /* ensure full width for centering */
+}
+
 
 #product1 .pro1:hover {
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
@@ -297,6 +308,45 @@ button{
   color: #aaa;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 799px) {
   .footer-container {
@@ -422,7 +472,7 @@ button{
 
 @media (max-width: 799px) {
   #feature .fe-box {
-    width: 90%;              /* one per row on very small screens */
+    width: 35%;              /* one per row on very small screens */
   }
 
   #product1 h2 {
@@ -445,15 +495,18 @@ button{
 
   #header .logo {
     margin-right: auto;  /* stick logo to the left */
-    max-width: 120px;    /* optional: shrink logo for mobile */
+    max-width: 120px;    /* shrink logo for mobile */
   }
-
-  
 }
 
-
-
-
+/* ✅ separate media query block */
+@media (max-width: 477px) {
+  #product1 .pro1 {
+    flex: 1 1 100%;   /* full width on small screens */
+    max-width: 100%;  /* prevent overflow */
+    margin: 10px 0;   /* vertical spacing */
+  }
+}
 
 
 
