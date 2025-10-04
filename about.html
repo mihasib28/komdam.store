@@ -1,40 +1,738 @@
-<footer style="background:#222; color:#fff; padding:30px 20px; font-family: 'Noto Sans Bengali', sans-serif;">
-  <div style="max-width:1000px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komdam.store - আপনার বিশ্বস্ত অনলাইন মার্কেটপ্লেস</title>
+    <meta name="description" content="Komdam.store - মানসম্মত পণ্য সাশ্রয়ী দামে। দ্রুত ডেলিভারি ও গ্রাহক সন্তুষ্টি নিশ্চিত করি।">
+    <meta name="author" content="Komdam.store">
+    <meta name="keywords" content="অনলাইন শপিং, মার্কেটপ্লেস, সাভার, বাংলাদেশ, e-commerce">
     
-    <!-- About -->
-    <div>
-      <h2 style="font-size:20px; margin-bottom:12px;">Komdam.store</h2>
-      <p style="font-size:14px; line-height:1.6; color:#ccc;">
-        Komdam.store আপনার বিশ্বস্ত অনলাইন মার্কেটপ্লেস, যেখানে মানসম্মত পণ্য সাশ্রয়ী দামে পাওয়া যায়। 
-        আমরা দ্রুত ডেলিভারি ও গ্রাহক সন্তুষ্টি নিশ্চিত করি।
-      </p>
-    </div>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Komdam.store - আপনার বিশ্বস্ত অনলাইন মার্কেটপ্লেস">
+    <meta property="og:description" content="মানসম্মত পণ্য সাশ্রয়ী দামে। দ্রুত ডেলিভারি ও গ্রাহক সন্তুষ্টি নিশ্চিত করি।">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Contact Info -->
-    <div>
-      <h2 style="font-size:20px; margin-bottom:12px;">যোগাযোগ</h2>
-      <p style="margin:6px 0;">👤 রাশেদ</p>
-      <p style="margin:6px 0;">📞 <a href="tel:+8801713225014" style="color:#ff7a00; text-decoration:none;">+88 01713225014</a></p>
-      <p style="margin:6px 0;">📧 <a href="mailto:engineerrashedul@gmail.com" style="color:#ff7a00; text-decoration:none;">engineerrashedul@gmail.com</a></p>
-      <p style="margin:6px 0;">🏬 শপ নং 73, গ্রাউন্ড ফ্লোর, নিউ মার্কেট, সাভার</p>
-    </div>
+        :root {
+            --primary-color: #ff7a00;
+            --primary-glow: #ff9933;
+            --dark-bg: #222222;
+            --dark-card: #2d2d2d;
+            --light-bg: #fafafa;
+            --light-card: #ffffff;
+            --text-dark: #222222;
+            --text-light: #ffffff;
+            --text-muted: #737373;
+            --border-color: #e5e5e5;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-glow: 0 10px 40px -10px rgba(255, 122, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-    <!-- Social Links -->
-    <div>
-      <h2 style="font-size:20px; margin-bottom:12px;">Follow Us</h2>
-      <p style="margin:6px 0;">
-        🌐 <a href="https://www.facebook.com/share/1BNBiM3NyR/" style="color:#ff7a00; text-decoration:none;">Facebook</a>
-      </p>
-      <p style="margin:6px 0;">
-        📸 <a href="#" style="color:#ff7a00; text-decoration:none;">Instagram</a>
-      </p>
-      <p style="margin:6px 0;">
-        🐦 <a href="#" style="color:#ff7a00; text-decoration:none;">Twitter</a>
-      </p>
-    </div>
-  </div>
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-  <div style="text-align:center; margin-top:20px; font-size:13px; color:#aaa;">
-    &copy; 2025 Komdam.store | All Rights Reserved
-  </div>
-</footer>
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--dark-bg), #3a2a1a);
+            overflow: hidden;
+            color: var(--text-light);
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .hero-blob-1 {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            width: 288px;
+            height: 288px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .hero-blob-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 40px;
+            width: 384px;
+            height: 384px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 3s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 80px 24px;
+            max-width: 1000px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            color: #d1d5db;
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            font-size: 1.125rem;
+            font-weight: 500;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            font-family: 'Noto Sans Bengali', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-glow);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 50px -15px rgba(255, 122, 0, 0.5);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-dark);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Section */
+        .section {
+            padding: 80px 24px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 64px;
+            line-height: 1.8;
+        }
+
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+
+        .value-card {
+            background: var(--light-card);
+            padding: 32px;
+            border-radius: 16px;
+            border: 2px solid var(--border-color);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .value-card:nth-child(1) { animation-delay: 0s; }
+        .value-card:nth-child(2) { animation-delay: 0.1s; }
+        .value-card:nth-child(3) { animation-delay: 0.2s; }
+        .value-card:nth-child(4) { animation-delay: 0.3s; }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--primary-color);
+        }
+
+        .value-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255, 122, 0, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .value-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--primary-color);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .value-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .value-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Story Section */
+        .story-card {
+            background: var(--light-card);
+            border-radius: 24px;
+            padding: clamp(2rem, 5vw, 4rem);
+            box-shadow: var(--shadow);
+            border: 2px solid var(--border-color);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .story-card h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .story-card p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: rgba(255, 122, 0, 0.03);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .contact-card {
+            background: var(--light-card);
+            padding: 32px;
+            border-radius: 16px;
+            border: 2px solid var(--border-color);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--primary-color);
+        }
+
+        .contact-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 122, 0, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .contact-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: var(--primary-color);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .contact-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-card a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+            word-break: break-word;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 48px 0;
+        }
+
+        .divider-line {
+            width: 80px;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .divider p {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            padding: 48px 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #d1d5db;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-icon {
+            width: 16px;
+            height: 16px;
+            stroke: var(--primary-color);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #404040;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Icon Arrow */
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            transition: var(--transition);
+        }
+
+        .btn:hover .arrow-icon {
+            transform: translateX(4px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 500px;
+            }
+
+            .section {
+                padding: 60px 16px;
+            }
+
+            .values-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1>আমাদের সম্পর্কে</h1>
+            <p>Komdam.store - আপনার বিশ্বস্ত অনলাইন শপিং পার্টনার</p>
+            <div class="hero-buttons">
+                <a href="tel:+8801713225014" class="btn btn-primary">
+                    যোগাযোগ করুন
+                    <svg class="arrow-icon" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Mission -->
+            <h2 class="section-title">আমাদের লক্ষ্য</h2>
+            <p class="section-subtitle">
+                Komdam.store একটি আধুনিক অনলাইন মার্কেটপ্লেস যা গ্রাহকদের জন্য সর্বোত্তম 
+                কেনাকাটার অভিজ্ঞতা প্রদান করতে প্রতিশ্রুতিবদ্ধ। আমরা বিশ্বাস করি যে মানসম্মত 
+                পণ্য সবার জন্য সহজলভ্য হওয়া উচিত।
+            </p>
+
+            <!-- Values Grid -->
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="3" y1="6" x2="21" y2="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 10a4 4 0 0 1-8 0" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>মানসম্মত পণ্য</h3>
+                    <p>আমরা শুধুমাত্র উচ্চ মানের পণ্য সরবরাহ করি যা আপনার আস্থা অর্জন করে।</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="1" y="3" width="15" height="13" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 8a4 4 0 0 1 4 4v5H6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="5.5" cy="18.5" r="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="18.5" cy="18.5" r="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>দ্রুত ডেলিভারি</h3>
+                    <p>সময়মত ডেলিভারি আমাদের প্রতিশ্রুতি। আপনার পণ্য দ্রুত পৌঁছে দেওয়া হবে।</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>নিরাপদ কেনাকাটা</h3>
+                    <p>উচ্চমানের পণ্য, সাশ্রয়ী মূল্যে, দ্রুত ডেলিভারি। আপনার ভরসার ঠিকানা নির্ভরযোগ্য কেনাকাটার জন্য।</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>গ্রাহক সেবা</h3>
+                    <p>আমরা আমাদের গ্রাহকদের সন্তুষ্টিকে সর্বোচ্চ গুরুত্ব দিই এবং সর্বদা সাহায্য করতে প্রস্তুত।</p>
+                </div>
+            </div>
+
+            <!-- Story Section -->
+            <div class="story-card">
+                <h2>আমাদের গল্প</h2>
+                <div>
+                    <p>
+                        Komdam.store এর যাত্রা শুরু হয়েছে একটি সাধারণ স্বপ্ন নিয়ে - প্রতিটি 
+                        ক্রেতাকে সেরা মানের পণ্য এবং সেবা প্রদান করা।
+                    </p>
+                    <p>
+                        আমরা বিশ্বাস করি যে অনলাইন শপিং হওয়া উচিত সহজ, নিরাপদ এবং আনন্দদায়ক। 
+                        তাই আমরা প্রতিটি পদক্ষেপে আমাদের গ্রাহকদের কথা ভেবে কাজ করি।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">যোগাযোগ করুন</h2>
+            <p class="section-subtitle">
+                আমরা সবসময় আপনার সেবায় প্রস্তুত। যেকোনো প্রশ্ন বা সহায়তার জন্য আমাদের সাথে যোগাযোগ করুন।
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>ফোন</h3>
+                    <a href="tel:+8801713225014">+88 01713225014</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>ইমেইল</h3>
+                    <a href="mailto:engineerrashedul@gmail.com">engineerrashedul@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>ঠিকানা</h3>
+                    <p>শপ নং 73, গ্রাউন্ড ফ্লোর, নিউ মার্কেট, সাভার</p>
+                </div>
+            </div>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <p>অথবা</p>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="https://www.facebook.com/share/1BNBiM3NyR/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    Facebook এ যোগাযোগ করুন
+                </a>
+                
+                <a href="tel:+8801713225014" class="btn btn-outline">
+                    <svg class="footer-icon" viewBox="0 0 24 24">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    কল করুন
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- About -->
+            <div class="footer-section">
+                <h2>Komdam.store</h2>
+                <p>
+                    Komdam.store আপনার বিশ্বস্ত অনলাইন মার্কেটপ্লেস, যেখানে মানসম্মত পণ্য সাশ্রয়ী দামে পাওয়া যায়। 
+                    আমরা দ্রুত ডেলিভারি ও গ্রাহক সন্তুষ্টি নিশ্চিত করি।
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h2>যোগাযোগ</h2>
+                <p style="margin: 6px 0;">👤 রাশেদ</p>
+                <a href="tel:+8801713225014" style="margin: 6px 0;">
+                    <svg class="footer-icon" viewBox="0 0 24 24">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    +88 01713225014
+                </a>
+                <a href="mailto:engineerrashedul@gmail.com" style="margin: 6px 0;">
+                    <svg class="footer-icon" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    engineerrashedul@gmail.com
+                </a>
+                <p style="margin: 6px 0;">
+                    <svg class="footer-icon" viewBox="0 0 24 24" style="display: inline-block; vertical-align: middle;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    শপ নং 73, গ্রাউন্ড ফ্লোর, নিউ মার্কেট, সাভার
+                </p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/share/1BNBiM3NyR/" target="_blank" rel="noopener noreferrer" style="margin: 6px 0;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="stroke: none;">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Komdam.store | All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.value-card, .contact-card, .story-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
