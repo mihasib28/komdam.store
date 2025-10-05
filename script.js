@@ -13,3 +13,19 @@ if (close) {
     nav.classList.remove('active');
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById('carouselTrack');
+
+  // Duplicate content for seamless infinite loop
+  const clone = track.innerHTML;
+  track.innerHTML += clone;
+
+  // To make it ultra-smooth: dynamically match animation distance
+  const totalWidth = track.scrollWidth / 2;
+  track.style.animation = `scroll ${totalWidth / 40}s linear infinite`;
+
+  console.log("Carousel width:", totalWidth, "Animation speed:", totalWidth / 40, "s");
+});
+
+
