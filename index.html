@@ -294,16 +294,76 @@
       
     </section>
 
-
-    
-  
-
-   
-
-    
-
   </div>
 </section>
+
+<section class="shop-banner">
+  <div class="container my-5 pt-5">
+    <div class="row align-items-center justify-content-between">
+      
+      <!-- Text (Left Side) -->
+      <div class="col-md-6 text-start text-white">
+        <h1 class="fw-bold lh-1">Komdam.store</h1>
+        <p class="fst-italic">আপনার বিশ্বস্ত অনলাইন মার্কেটপ্লেস</p>
+      </div>
+
+      <!-- Image (Right Side) -->
+      <div class="col-md-6 text-end 18rem">
+        <img 
+          src="./Image/photo_2025-10-06_07-30-03.jpg" 
+          class="img-fluid w-100 rounded shadow" 
+          alt="Shop banner image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .shop-banner {
+    background: url('./Image/photo_2025-10-06_07-30-03.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+
+ 
+  /* Optional overlay for readability */
+  .shop-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .shop-banner .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (max-width: 767.98px) {
+    .shop-banner {
+      height: auto;
+      padding: 2rem 0;
+    }
+    .shop-banner {
+      margin-top: 5rem;
+    margin-bottom: 5rem;
+    }
+  }
+</style>
+
 
 
 <section>
