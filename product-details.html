@@ -5,6 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Details</title>
   <style>
+
+
+/* product Featurea css */
+
+   /* --- Product Section --- */
+#product1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#product1 h2 {
+  font-size: 70px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #f0a758;
+}
+
+#product2, #product3, #product4 {
+  padding: 60px 80px;
+}
+
+
+#product1 p {
+  font-size: 30px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* --- Product Grid --- */
+#product1 .pro-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  align-items: stretch;   /* ✅ same height cards */
+}
+
+/* --- Product Card --- */
+#product1 .pro1 {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+  margin: 15px;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+
+  display: flex;                 
+  flex-direction: column;
+  justify-content: space-between; /* ✅ keeps content balanced */
+}
+
+#product1 .pro1:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+
+/* --- Product Image Fix --- */
+#product1 .pro1 img {
+  width: 100%;
+  height: 200px;          /* ✅ force equal image height */
+  object-fit: contain;    /* keep full image without distortion */
+  border-radius: 10px;
+}
+
+/* --- Product Title Fix --- */
+#product1 .pro1 h5 {
+  min-height: 50px;       /* ✅ reserve space so all titles same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* --- Price Section --- */
+#product1 .old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#product1 .new-price {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* --- Product Links --- */
+.pro1-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.pro1-link .pro1 {
+  cursor: pointer;
+}
+
+ footer {
+      background: #ff7a00;
+      color: #222;
+      text-align: center;
+      padding: 20px;
+      font-family: "Open Sans", Arial, sans-serif;
+      margin-top: 40px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+
+@media (max-width: 799px) {
+  
+  #product1 h2 {
+        font-size: 40px; /* smaller on tablet/mobile */
+    }
+
+  
+    
+
+    #product1 p {
+        font-size: 15px; /* smaller on tablet/mobile */
+    }
+}
+
+@media (max-width: 477px) {
+  #product1 .pro1 {
+    flex: 1 1 100%;   /* full width on small screens */
+    max-width: 100%;  /* prevent overflow */
+    margin: 10px 0;   /* vertical spacing */
+  }
+}
+
+
+
+
+
+
+
+/* product details css */
     body {
       font-family: Verdana, sans-serif;
       margin: 0;
@@ -291,6 +437,199 @@
       document.querySelector(".product-page").innerHTML = "<p>Product not found.</p>";
     }
   </script>
+
+   <section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Check out our featured products</p>
+
+  <div class="pro-container">
+
+     <a href="product-details.html?id=1" class="pro1-link">
+  <div class="pro1">
+    <img src="./Image/Product/J9TS-scaled.jpg" alt="">
+    <div class="JVCO-55">
+      <h5>JVCO 32″ J9TS Voice-Control LED TV</h5>
+      <div class="price-box">
+        <span class="old-price">20,990.00৳</span>
+        <span class="new-price">18,990.00৳</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+     <a href="product-details.html?id=2" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/32'' tv.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO Google 32″ Led Tv</h5>
+        <div class="price-box">
+          <span class="old-price">23,500.00৳</span>
+          <span class="new-price">21,500.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+     <a href="product-details.html?id=3" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/43-removebg-preview.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO 43″ Google G22F LED TV</h5>
+        <div class="price-box">
+          <span class="old-price">39,000.00৳</span>
+          <span class="new-price">37,000.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+    <a href="product-details.html?id=4" class="pro1-link">
+ <div class="pro1">
+  <img src="./Image/Product/WEBos 50″.png" alt="">
+  <div class="JVCO-55">
+    <h5>JVCO WEBos 50″ Led Tv</h5>
+    <div class="price-box">
+      <span class="old-price">47,000.00৳</span>
+      <span class="new-price">45,000.00৳</span>
+    </div>
+  </div>
+</div>
+</a>
+
+
+
+    <a href="product-details.html?id=5" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/WEBos 55.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO WEBos 55″ Led Tv</h5>
+        <div class="price-box">
+          <span class="old-price">61,990.00৳</span>
+          <span class="new-price">59,990.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+  
+
+   <a href="product-details.html?id=6" class="pro1-link">
+  <div class="pro1">
+    <img src="./Image/Product/65incG22F.png" alt="">
+    <div class="JVCO-55">
+      <h5>JVCO 65″ Google G22F Led TV</h5>
+      <div class="price-box">
+        <span class="old-price">85,000.00৳</span>
+        <span class="new-price">75,000.00৳</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+    <a href="product-details.html?id=7" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/65-G3B-Qled.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO 65″ Google G3B QLED Led Tv</h5>
+        <div class="price-box">
+          <span class="old-price">100,000.00৳</span>
+          <span class="new-price">85,000.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+    
+  
+    <a href="product-details.html?id=8" class="pro1-link">
+      <div class="pro1">
+        <img src="./Image/Product/1.5 Ton 18DC ac.png" alt="">
+        <div class="JVCO-55">
+          <h5>JVCO 1.5 Ton 18DC Inverter AC</h5>
+          <div class="price-box">
+            <span class="old-price">72,000.00৳</span>
+            <span class="new-price">69,000.00৳</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+      <a href="product-details.html?id=9" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/Infrared Cooker for komdam.store.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO Infrared Cooker Inverter (2600W)</h5>
+        <div class="price-box">
+          <span class="old-price">5,090.00৳</span>
+          <span class="new-price">4,790.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+    <a href="product-details.html?id=10" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/Infrared Cooker for komdam.store.png" alt="">
+      <div class="JVCO-55">
+        <h5>JVCO Infrared Cooker Inverter (3200W)</h5>
+        <div class="price-box">
+          <span class="old-price">5,190.00৳</span>
+          <span class="new-price">4,990.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+  
+
+      <a href="product-details.html?id=11" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/H6c.png" alt="">
+      <div class="JVCO-55">
+        <h5>H6c</h5>
+        <p>Pan & Tilt Smart Home Camera</p>
+        <div class="price-box">
+          <span class="old-price">12,000.00৳</span>
+          <span class="new-price">10,500.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+    <a href="product-details.html?id=12" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/H6c 2k (EU).png" alt="">
+      <div class="JVCO-55">
+        <h5>H6c 2K (EU)</h5>
+        <p>Elevating visual protection in every angle</p>
+        <div class="price-box">
+          <span class="old-price">12,000.00৳</span>
+          <span class="new-price">10,500.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+
+    <a href="product-details.html?id=13" class="pro1-link">
+    <div class="pro1">
+      <img src="./Image/Product/H6c 2k+.png" alt="">
+      <div class="JVCO-55">
+        <h5>H6c 2K⁺</h5>
+        <p>Pan & Tilt Smart Home Camera in 2K⁺ Resolution</p>
+        <div class="price-box">
+          <span class="old-price">12,000.00৳</span>
+          <span class="new-price">10,500.00৳</span>
+        </div>
+      </div>
+    </div>
+    </a>
+      
+    </section>
+
+    <footer>
+       &copy; 2025 Komdam.store | All Rights Reserved
+    </footer>
+  
 
 </body>
 </html>
