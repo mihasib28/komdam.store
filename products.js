@@ -89,8 +89,8 @@ const products = {
    "6": {
     name: "JVCO 65″ Google G22F Led TV",
     images: [
-      "./Image/Product/65-G22F-1.png",
-      "./Image/Product/65-G22F-2.png"
+      "./Image/Product/65incG22F.png",
+      "./Image/Product/65incG22F.png"
     ],
     oldPrice: "85,000.00৳",
     newPrice: "75,000.00৳",
