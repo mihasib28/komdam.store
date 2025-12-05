@@ -2,9 +2,9 @@ const products = {
   "1": {
     name: "JVCO 32″ J9TS Voice-Control LED TV",
     images: [
-      "./Image/Product/J9TS-scaled.jpg",
-      "./Image/Product/J9TS-scaled.jpg",
-      "./Image/Product/J9TS-scaled.jpg"
+      "../Image/Product/J9TS-scaled.jpg",
+      "../Image/Product/J9TS-scaled.jpg",
+      "../Image/Product/J9TS-scaled.jpg"
     ],
     oldPrice: "20,990.00৳",
     newPrice: "18,990.00৳",
@@ -19,9 +19,9 @@ const products = {
   "2": {
     name: "JVCO Google 32″ Led Tv",
     images: [
-      "./Image/Product/32'' tv.png",
-      "./Image/Product/32'' tv.png",
-      "./Image/Product/32'' tv.png"
+      "../Image/Product/32'' tv.png",
+      "../Image/Product/32'' tv.png",
+      "../Image/Product/32'' tv.png"
     ],
     oldPrice: "23,500.00৳",
     newPrice: "21,500.00৳",
@@ -36,9 +36,9 @@ const products = {
   "3": {
     name: "JVCO 43″ Google G22F Led TV",
     images: [
-      "./Image/Product/43-removebg-preview.png",
-      "./Image/Product/43-removebg-preview.png",
-      "./Image/Product/43-removebg-preview.png"
+      "../Image/Product/43-removebg-preview.png",
+      "../Image/Product/43-removebg-preview.png",
+      "../Image/Product/43-removebg-preview.png"
     ],
     oldPrice: "37,000.00৳",
     newPrice: "37,000.00৳",
@@ -54,9 +54,9 @@ const products = {
   "4": {
     name: "JVCO WEBos 50″ Led Tv",
     images: [
-      "./Image/Product/WEBos 50″.png",
-      "./Image/Product/WEBos 50″.png",
-      "./Image/Product/WEBos 50″.png"
+      "../Image/Product/WEBos 50″.png",
+      "../Image/Product/WEBos 50″.png",
+      "../Image/Product/WEBos 50″.png"
     ],
     oldPrice: "47,000.00৳",
     newPrice: "45,000.00৳",
@@ -72,9 +72,9 @@ const products = {
   "5": {
     name: "JVCO WEBos 55″ Led Tv",
     images: [
-      "./Image/Product/WEBos 55.png",
-      "./Image/Product/WEBos 55.png",
-      "./Image/Product/WEBos 55.png"
+      "../Image/Product/WEBos 55.png",
+      "../Image/Product/WEBos 55.png",
+      "../Image/Product/WEBos 55.png"
     ],
     oldPrice: "61,990.00৳",
     newPrice: "59,990.00৳",
@@ -89,8 +89,8 @@ const products = {
    "6": {
     name: "JVCO 65″ Google G22F Led TV",
     images: [
-      "./Image/Product/65incG22F.png",
-      "./Image/Product/65incG22F.png"
+      "../Image/Product/65incG22F.png",
+      "../Image/Product/65incG22F.png"
     ],
     oldPrice: "85,000.00৳",
     newPrice: "75,000.00৳",
@@ -106,9 +106,9 @@ const products = {
   "7": {
     name: "JVCO 65″ Google G3B QLED Led TV",
     images: [
-      "./Image/Product/65-G3B-Qled.png",
-      "./Image/Product/65-G3B-Qled.png",
-      "./Image/Product/65-G3B-Qled.png"
+      "../Image/Product/65-G3B-Qled.png",
+      "../Image/Product/65-G3B-Qled.png",
+      "../Image/Product/65-G3B-Qled.png"
     ],
     oldPrice: "100,000.00৳",
     newPrice: "85,000.00৳",
@@ -124,9 +124,9 @@ const products = {
   "8": {
     name: "JVCO 1.5 Ton 18DC Inverter AC",
     images: [
-      "./Image/Product/1.5 Ton 18DC ac.png",
-      "./Image/Product/1.5 Ton 18DC AC.jpg",
-      "./Image/Product/1.5 Ton 18DC AC 2.jpg"
+      "../Image/Product/1.5 Ton 18DC ac.png",
+      "../Image/Product/1.5 Ton 18DC AC.jpg",
+      "../Image/Product/1.5 Ton 18DC AC 2.jpg"
     ],
     oldPrice: "72,000.00৳",
     newPrice: "70,000.00৳",
@@ -142,9 +142,9 @@ const products = {
   "9": {
     name: "JVCO Infrared 2600W Cooker Inverter",
     images: [
-      "./Image/Product/Infrared Cooker for komdam.store.png",
-      "./Image/Product/Infrared Cooker for komdam2.store.png",
-      "./Image/Product/Infrared Cooker for komdam3.store.png"
+      "../Image/Product/Infrared Cooker for komdam.store.png",
+      "../Image/Product/Infrared Cooker for komdam2.store.png",
+      "../Image/Product/Infrared Cooker for komdam3.store.png"
     ],
     oldPrice: "5,090.00৳",
     newPrice: "4,790.00৳",
@@ -160,9 +160,9 @@ const products = {
   "10": {
     name: "JVCO Infrared 3200W Cooker Inverter",
     images: [
-      "./Image/Product/Infrared Cooker for komdam.store.png",
-      "./Image/Product/Infrared Cooker for komdam2.store.png",
-      "./Image/Product/Infrared Cooker for komdam3.store.png"
+      "../Image/Product/Infrared Cooker for komdam.store.png",
+      "../Image/Product/Infrared Cooker for komdam2.store.png",
+      "../Image/Product/Infrared Cooker for komdam3.store.png"
     ],
     oldPrice: "5,190.00৳",
     newPrice: "4,990.00৳",
@@ -178,9 +178,9 @@ const products = {
   "11": {
     name: "Pan & Tilt Smart Home Camera H6c",
     images: [
-      "./Image/Product/H6c.png",
-      "./Image/Product/H6c.png",
-      "./Image/Product/H6c.png"
+      "../Image/Product/H6c.png",
+      "../Image/Product/H6c.png",
+      "../Image/Product/H6c.png"
     ],
     oldPrice: "12,500.00৳",
     newPrice: "10,500.00৳",
@@ -197,9 +197,9 @@ const products = {
   "12": {
     name: "Elevating visual protection in every angle H6c 2K (EU)",
     images: [
-      "./Image/Product/H6c 2k (EU).png",
-      "./Image/Product/H6c 2k (EU).png",
-      "./Image/Product/H6c 2k (EU).png"
+      "../Image/Product/H6c 2k (EU).png",
+      "../Image/Product/H6c 2k (EU).png",
+      "../Image/Product/H6c 2k (EU).png"
     ],
     oldPrice: "12,500.00৳",
     newPrice: "10,500.00৳",
@@ -216,9 +216,9 @@ const products = {
   "13": {
     name: "Pan & Tilt Smart Home Camera in 2K⁺ Resolution H6c 2K⁺",
     images: [
-      "./Image/Product/H6c 2k+.png",
-      "./Image/Product/H6c 2k+.png",
-      "./Image/Product/H6c 2k+.png"
+      "../Image/Product/H6c 2k+.png",
+      "../Image/Product/H6c 2k+.png",
+      "../Image/Product/H6c 2k+.png"
     ],
     oldPrice: "12,500.00৳",
     newPrice: "10,500.00৳",
